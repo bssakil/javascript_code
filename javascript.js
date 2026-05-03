@@ -127,5 +127,34 @@ let ceil1 = input1 + input2;
 let sum5 = Math.ceil(ceil1); //result 10.3 =11 korbe
 console.log(sum5);*/
 
+//<<=======Logical Conditional Statement=========>>
+// <<======if, else, else if or Switch ==========>>
+let a = 10;
+let b = 10;
+if(a > b){
+    console.log("One Statement");
+}
+else if(a < b){
+    console.log("Tow Statement");
+}else{
+    console.log("Three Satement");
+}
+
+let x = 500;
+switch(x){
+    
+    case 40:
+        console.log("One Statement");
+        break;
+    case 30:
+        console.log("Yow Statement");
+        break;
+    case 50:
+        console.log("Three Statement");
+        break;
+    default:
+        console.log("foure Statement")
+}
+
 
 

@@ -156,5 +156,18 @@ switch(x){
         console.log("foure Statement")
 }
 
+// <<==========Javascript Date object ===============>>
+let myDate = new Date();
+console.log(myDate.toTimeString());
+console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleString());
+console.log(myDate.toDateString());
+console.log(myDate.getFullYear());
+console.log(myDate.getMonth());
+console.log(myDate.getDay());
+console.log(myDate.getDate());
+console.log(myDate.getTime());
+console.log(myDate.toLocaleDateString());
+
 
 

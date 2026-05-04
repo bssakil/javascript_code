@@ -169,5 +169,16 @@ console.log(myDate.getDate());
 console.log(myDate.getTime());
 console.log(myDate.toLocaleDateString());
 
+// <<==========Javascript Array ===============>>
+let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
+    firendName[0] = "Sakil"
+    firendName.push("Rabbani");
+    firendName.unshift("Hablo");
+    firendName.shift();
+    firendName.pop();
+    console.log(firendName);
 
-
+    let fdName = ["Mynul","Anwer","Mostakim","Sakil","Hablo"];
+    console.log(fdName.slice(2,3));
+    fdName.splice(1,3,"html","css","java");
+    console.log(fdName);

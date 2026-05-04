@@ -182,3 +182,19 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
     console.log(fdName.slice(2,3));
     fdName.splice(1,3,"html","css","java");
     console.log(fdName);
+
+    // <<==========Javascript Loops for while ===============>>
+    let forLoop = [1,2,3,4,5];
+    for(let f = 0; f < forLoop.length; f++){
+        console.log("Welcome");
+    };
+
+    let whileLoop = [1,2,3,4,5];
+    let w = 0;
+    while(w < whileLoop.length){
+        console.log("Hi EveryOne");
+        w++;
+    };
+
+    // <<==========Javascript Function ===============>>
+

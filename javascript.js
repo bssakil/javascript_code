@@ -197,4 +197,29 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
     };
 
     // <<==========Javascript Function ===============>>
+    function Fun(){
+        let p=10;
+        let q=30;
+        let r= p+q;
+        console.log(r);
+    }
+    Fun();
 
+    function Func(p,q){
+        let r= p-q;
+        console.log(r);
+    }
+    Func(20,10);
+
+    function Funct(y){
+        let result = y * 10;
+        console.log(result);
+    }
+    Funct(10);
+
+    function call(run1,run2){
+        let run=run1*run2;
+        return run;
+    }
+    let run3 = call(20,10);
+    console.log(run3);

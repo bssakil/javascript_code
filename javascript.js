@@ -223,3 +223,31 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
     }
     let run3 = call(20,10);
     console.log(run3);
+
+    // <<==========Javascript Object this display ===============>>
+    let obo = {
+        names: "Sakil",
+        age:23,
+        phoneNo: 8801796675373,
+        gmail: "sssarker2526@gmail.com",
+        contry:"Bangladesh",
+        currentLocation: "Gazipur_Dhaka_Bangladesh",
+        jobs: "Student"
+
+    }
+    console.log(obo.contry);
+
+    function User(names,age,job){
+        this.names = names;
+        this.age = age;
+        this.job = job
+        this.display = function(){
+            console.log(this.names);
+            console.log(this.age);
+            console.log(this.job);
+        }
+    }
+    let show = new User("Black Sarker",23,"Student");
+    let showOne = new User("Sarker",23,"Developer");
+    show.display();
+    showOne.display();

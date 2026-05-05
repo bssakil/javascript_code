@@ -251,3 +251,18 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
     let showOne = new User("Sarker",23,"Developer");
     show.display();
     showOne.display();
+
+    // <<==========Javascript Tarnary Operator ===============>>
+    let tarnar = 30;
+    let tarn = (tarnar > 40) ? "Tarnary Operator" : "Tarnary Operator!";
+    console.log(tarn);
+    // <<==========Javascript Brack or Continue ===============>>
+
+    for(let brackCon = 0; brackCon <=10; brackCon++){
+        if (brackCon == 5){
+            console.log("Brack It");
+            //brack;
+            continue;
+        }
+        console.log(brackCon);
+    };

@@ -266,3 +266,20 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
         }
         console.log(brackCon);
     };
+
+    // <<==========Javascript Function Exprenssion ===============>>
+    let exprenssion = function(expen,sion){
+        console.log(expen + sion)
+    }
+    exprenssion("javascript","Expenssion");
+    // <<==========Javascript Function inner ===============>>
+    function world(man,men){
+        let myNam = man;
+        function bangladesh(){
+            let yourNam = men;
+            console.log(yourNam);
+        }
+        console.log(myNam)
+        bangladesh();
+    }
+    world("Black sarker","Sarker");

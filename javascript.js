@@ -283,3 +283,70 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
         bangladesh();
     }
     world("Black sarker","Sarker");
+
+
+    // <<==========Javascript ES6 Defult Function Parameter ===============>>
+    function defaultPara(massage = "Black Sarker"){
+        console.log(massage)
+    }
+    defaultPara("Javascript Parameter");
+
+    function createPara(massage){
+        massage = typeof massage !== "undefined" ? massage:"Create Parameter";
+        console.log(massage);
+    }
+    createPara(" Yes! Create Parameter");
+
+    // <<==========Javascript ES6 Rest Function Parameter ===============>>
+    function rest(num1,num2, ...num){
+        console.log(num1,num2,num);
+    }
+    rest(1,2,3,4,5,); //value 3,4,5 is store rest ...num>>
+
+    // <<==========Javascript ES6 Speared Parameter ===============>>
+    const speardPara = [1,2,3,4];
+    //const speardPara1 = [speardPara,5,6,7,8]; //2nd Array Crate
+    const speardPara1 = [...speardPara,5,6,7,8]; //spared Parameter
+    console.log(speardPara1);
+
+    // <<==========Javascript object literals Function ===============>>
+    function say(mass,names){
+        return{mass,names}
+    }
+    console.log(say("this is a object literal","Sakil"));
+
+    // <<==========Javascript for of, for in ===============>>
+    const forOf =[1,2,3,4,5];
+    for(arraya of forOf){
+        console.log(arraya);
+    }
+
+    const forIn =[100,200,300,400,500];
+    for(arrayTwo in forIn){
+        console.log(arrayTwo);
+    }
+
+    const objectPro ={
+        names:"sakil",
+        age:23,
+        roll:2503
+    }
+    for(NewObj in objectPro){
+        console.log(NewObj);
+    }
+
+    // <<==========Javascript ES6 Templet litarals ===============>>
+    const templetStr = `Hablo`;
+    const templetStr1 = 55;
+    console.log(`My Name Is ${templetStr} & My Age is ${templetStr1} Yers Old`);
+
+    const str = `i love bangladesh
+                "black" 
+                "sarker" `;
+    console.log(str);
+    
+
+    //old templets
+    /*const templetStrOne = `Hablo mama`;
+    const templetStrTwo = 50;
+    console.log("My Name " + templetStrOne + " & My Age is " + templetStrTwo + " Yers Old");*/

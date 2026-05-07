@@ -350,3 +350,171 @@ let firendName = ["Black Sarker","Mynul","Anwer","Mostakim"];
     /*const templetStrOne = `Hablo mama`;
     const templetStrTwo = 50;
     console.log("My Name " + templetStrOne + " & My Age is " + templetStrTwo + " Yers Old");*/
+
+    // <<==========Javascript ES6 Array===============>>
+    let one =[1,2,3,4,5,6,7,8];
+    let [anwer, mostakim, ...sakil] = one;
+    console.log(anwer,mostakim,sakil);
+
+    // <<==========Javascript ES6 Object===============>>
+    const objOne ={
+        names: "Kamrul",
+        age: 25,
+        wifie: "Samiya"
+    }
+    const {names,age,wifie} =objOne;
+    console.log(names,age,wifie);
+
+ // <<==========Javascript ES6 Class constaktur===============>>
+    class mobaile{
+        constructor(names,model,price){
+            this.names = names;
+            this.model = model;
+            this.price = price;
+        }
+    }
+    const mobaileDetils = new mobaile("Tablet","ProX","$800");
+    console.log(mobaileDetils);
+
+    //<<==========Javascript ES6 Class Expression constaktur===============>>
+    let profile = class{
+        constructor(names,phoneNo,roll){
+            this.names = names;
+            this.phoneNo = phoneNo;
+            this.roll = roll;
+        }
+    }
+    const userInfo = new profile("Mostakim","01324952008", 100);
+    console.log(userInfo);
+
+    //<<==========Javascript ES6 Class Statick===============>>
+    class hero{
+        static Boss(){
+            console.log("01324952005", 1000)
+        }
+    }
+    hero.Boss();
+
+    //<<==========Javascript ES6 Class inheritenc & super expend person===============>>
+    class parent{
+        mather(){
+            console.log("Ma Amer Jannat");
+        }
+        father(){
+            console.log("Baba Amer world");
+        }
+    }
+    class iam extends parent{
+        amerTarget(){
+            super.mather();
+            super.father();
+        }
+    }
+    //let mytarget = new iam();
+    //mytarget.mather();
+
+    let mytarget = new iam()
+    mytarget.amerTarget();
+
+ //<<==========Javascript ES6 Array Function Expenssion===============>>
+    let arrFunExp = function(x,y){
+        return x + y;
+    }
+    console.log(arrFunExp(10,40));
+
+    let arrayExpen = (x,y) => x + y; // Array Function Exprenssion
+    console.log(arrayExpen(41,10));
+
+    //<<==========Javascript ES6 Simbel===============>>
+    let sim1 = "Sakil";
+    let sim2 = "Sakil";
+    console.log(sim1===sim2);
+
+    let sim3 = Symbol("Sakil");
+    let sim4 = Symbol("Sakil");
+    console.log(sim3===sim4);
+
+    //<<==========Javascript ES6 for each===============>>
+    let each = [10,20,30,40,50];
+    each.forEach(lopCrate)
+    function lopCrate(s){
+        console.log(s);
+    }
+
+    let eachOne = [100,200,300,400,500];
+    eachOne.forEach((x) => console.log(x));
+
+//<<==========Javascript ES6 map Function===============>>
+let mapFun = [1,2,3,4];
+let mapFun1 = mapFun.map(fun);
+function fun(m){
+    return m * 2;
+}
+console.log(mapFun1);
+
+
+let maps = [10,20,30];
+let you = [];
+maps.forEach(map)
+function map(y){
+    you.push(y * 2)
+}
+console.log(you);
+
+//<<==========Javascript ES6 Array Function Filter()===============>>
+let filtering =[1,2,3,4,5,7,8];
+let filterNow = filtering.filter(funFun)
+function funFun(y){
+    return y > 4;
+}
+
+console.log(filterNow);
+
+//<<==========Javascript ES6 async seync function===============>>
+/*let seync = () => {
+    console.log("Seync");
+}
+let lodingTime = () => {
+    console.log("Seync1");
+}
+let seync1 = () => {
+    setTimeout(lodingTime, 2000)
+}
+let seync2 = () => {
+    console.log("Seync2");
+}
+seync();
+seync1();
+seync2();*/
+
+//<<==========Javascript ES6 callback and higer Oder function===============>>
+let display = (sakil) => {
+    console.log(sakil)
+}
+
+let callBackFun = (names,age,callBackFuncition) => {
+    const ditelis = `My Name Is ${names} & My Old ${age}`;
+    callBackFuncition(ditelis)
+}
+callBackFun("Sakil",23,display)
+
+//<<==========Javascript ES6 Promise function===============>>
+let userPromise = true;
+let promise = new Promise((rselove,reject) =>{
+    if(userPromise){
+        rselove([
+        {names: "sakil",email: "sarkergmail.com"},
+        {names: "mostakim",email: "mostakimgmail.com"}
+    ])
+    }else{
+        reject("User is Not Valid")
+    }
+})
+promise.then((s) =>{
+    console.log(s);
+})
+promise.catch((error) => {
+    console.log(error);
+})
+
+//<<==========Javascript ES6 Async and Await function===============>>

@@ -517,4 +517,13 @@ promise.catch((error) => {
     console.log(error);
 })
 
-//<<==========Javascript ES6 Async and Await function===============>>
+//<<==========Javascript ES6 createDocumentFragment===============>>
+let menu = document.querySelector("#menu");
+let lang = ["Python","Javascript","React"];
+let fargment =document.createDocumentFragment();
+lang.forEach((langues) => {
+    let li =document.createElement("li");
+        li.textContent = langues;
+        fargment.appendChild(li);
+})
+menu.appendChild(fargment);
